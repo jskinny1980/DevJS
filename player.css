@@ -1,0 +1,170 @@
+body, html
+{
+  height:100%;
+  margin:0;
+} 
+
+* {
+    box-sizing: border-box;
+  }
+
+  #logo
+  {
+    position: absolute;
+    top:3%;
+    left:30%;
+    width:40%;
+  }
+
+#bg-image
+{
+  height:100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter:blur(10px);
+  -webkit-filter: blur(10px);
+}
+
+.player
+{
+  width:30%;
+  position: absolute;
+  top:50%;
+  left:50%;
+  border:1px solid white;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius:10px;
+  box-shadow: 12px 12px 2px 1px rgba(206, 204, 202, .2);
+}
+
+#player-cover
+{
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;  
+}
+
+#title
+{
+  font-size:1rem;
+}
+
+span
+{
+  font-size:0.8rem;
+}
+
+/* Track bar styling */
+.bar
+{
+  width:80%;
+  height:3px;
+  background:white;
+  display:flex;
+  border-radius:10px;
+  margin-left:10%;
+  margin-bottom:2%;
+  margin-top:2%;
+  cursor: pointer;
+}
+
+.fillbar
+{
+   
+    height:3px;
+    background:rgb(231, 19, 19);
+    border-radius:10px;
+   
+}
+
+.handle
+{
+    width:12px;
+    height:12px;
+    background:rgb(231, 19, 19);
+    border-radius:50px;
+    margin-top:-4px;
+}
+
+/* buttons styling */
+
+ion-icon
+{
+color:white;
+padding:5px;
+cursor: pointer;
+}
+
+ion-icon:hover
+{
+ color:red;
+ transform: scale(1.5);
+}
+
+#pauseBtn
+{
+ display:none;
+}
+
+/* Playlist styling */
+#playlist 
+{
+ width:100%;
+ 
+ cursor: pointer;
+ 
+}
+
+
+
+
+
+
+
+/* Input type range Styling */
+/* Volume */
+
+.slider {
+    -webkit-appearance: none;
+    width: 20%;
+    height: 1.5px;
+    border-radius: 5px;   
+    background: white;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height:12px;
+    border-radius: 50%; 
+    background:rgb(231, 19, 19);
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgb(231, 19, 19);
+    cursor: pointer;
+  }
+
+  /* hiding volumes */
+
+  #volume-off
+  {
+    display:none;
+  }
+
+  .vol
+  {
+    margin-bottom:-2.5%;
+  }
+
+  

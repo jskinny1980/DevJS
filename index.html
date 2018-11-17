@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="player.css">
+    <title>DevJS audio player</title>
+</head>
+<body>
+
+   <img src="images/audiopc.jpg" id="bg-image" >
+
+   <div class="player">
+       <img id="player-cover" src="images/audiopc.jpg" alt="" class="img-fluid">
+
+       <h3 id="title" class="lead text-white mt-2">Title</h3>
+
+       <span id="audio-currenttime" class="text-center text-white">00:00</span> <span class="text-white">&#47;</span> <span id="audio-duration" class="text-center text-white">00:00</span>
+
+       <div id="trackbar" class="bar">
+           <div id="fillbar" class="fillbar"></div>
+           <div class="handle"></div>
+       </div>
+
+       <ion-icon id="previousBtn" name="rewind"></ion-icon>
+       <ion-icon id="playBtn" name="play"></ion-icon>
+       <ion-icon id="pauseBtn" name="pause"></ion-icon>
+       <ion-icon id="stopBtn" name="square"></ion-icon>
+       <ion-icon id="nextBtn" name="fastforward"></ion-icon>
+
+       <div class="vol-mute">
+            <ion-icon class="vol" id="volume-high" name="volume-high"></ion-icon >
+            <ion-icon class="vol" id="volume-off" name="volume-off"></ion-icon>
+            <input id="volume" class="slider" type="range" min="0" value="100" max="100">
+            
+     </div>
+
+     <div class=" mt-3">
+                <select name="playlist" id="playlist" size="3">
+                    <option value="This is dope.mp3">This is dope.mp3</option>
+                    <option value="Paper chasing.mp3">Paper chasing.mp3</option>
+                    <option value="Wanna touch you.mp3">Wanna touch you.mp3</option>
+                    
+                </select>
+     </div>
+
+
+     <img id="logo" class="img-fluid" src="udemy logo.png" alt="">
+
+    
+
+     
+      
+
+   </div>
+           
+
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="player.js"></script>
+      <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
+</body>
+</html>
